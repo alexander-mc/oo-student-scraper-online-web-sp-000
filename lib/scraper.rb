@@ -30,8 +30,11 @@ class Scraper
         profile[:twitter] = icon.attribute("href").value
       elsif icon.attribute("href").value.include?("linkedin")
         profile[:linkedin] = icon.attribute("href").value
-      elsif
-    
+      elsif icon.attribute("href").value.include?("github")
+        profile[:blog] = icon.attribute("href").value
+      else icon.attribute("href").value.include?("blog")
+      
+      
     end
   end
 
