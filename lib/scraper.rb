@@ -34,12 +34,12 @@ class Scraper
         profile[:blog] = icon.attribute("href").value
       else icon.attribute("href").value.include?("blog")
       end
+    end
       
     profile[:profile_quote] = info.css("div.profile-quote").text
     profile[:bio] = info.css("div.details-container div.description-holder p").text
     
     profile
-    end
   end
 end
 
