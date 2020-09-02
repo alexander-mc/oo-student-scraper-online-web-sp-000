@@ -35,7 +35,7 @@ class Scraper
       else icon.attribute("href").value.include?("blog")
       end
       
-      
+    info.css
       
     end
   end
