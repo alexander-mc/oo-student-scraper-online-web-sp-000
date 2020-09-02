@@ -35,8 +35,8 @@ class Scraper
       else icon.attribute("href").value.include?("blog")
       end
       
-    info.css("div.profile-quote").text
-    info.css("div.bio-block details-block div.description-holder p").text
+    profile[] = info.css("div.profile-quote").text
+    profile[] = info.css("div.bio-block details-block div.description-holder p").text
       
     end
   end
