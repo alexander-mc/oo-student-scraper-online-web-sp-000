@@ -33,11 +33,12 @@ class Scraper
       elsif icon.attribute("href").value.include?("github")
         profile[:blog] = icon.attribute("href").value
       else icon.attribute("href").value.include?("blog")
+      end
+      
       
       
     end
   end
-
 end
 
 Scraper.scrape_profile_page("https://learn-co-curriculum.github.io/student-scraper-test-page/students/ryan-johnson.html")
