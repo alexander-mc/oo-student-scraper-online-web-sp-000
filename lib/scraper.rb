@@ -36,6 +36,7 @@ class Scraper
       end
       
     info.css("div.personal-quote").text
+    info.css("").text
       
     end
   end
