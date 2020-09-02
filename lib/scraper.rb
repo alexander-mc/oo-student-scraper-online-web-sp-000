@@ -36,7 +36,7 @@ class Scraper
       end
       
     info.css("div.personal-quote").text
-    info.css("div.bio-block details-block div.description-holder).text
+    info.css("div.bio-block details-block div.description-holder p").text
       
     end
   end
